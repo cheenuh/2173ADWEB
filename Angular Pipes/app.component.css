@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  color: black;
+  background-color: #fff;
+  }
+
+  h1 {
+  font-size: 24px;
+  color: #c77398;
+  margin-bottom: 20px;
+  }
+
+  .a {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  }
+
+  .pipe{
+  background-color: #fff0f1;
+  border: 2px solid #c77398;
+  }
+
+  .pipes {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: black;
+  }

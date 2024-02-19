@@ -1,0 +1,56 @@
+<div class ="a pipe">
+  <h1>Date Pipe</h1>
+  Today's date :- {{presentDate | date}}<br/>
+  This is a short date :- {{presentDate | date: 'shortDate'}}<br/>
+  This line shows the full date :- {{presentDate | date: 'fullDate'}}<br/>
+  This line shows the medium date :- {{presentDate | date: 'mediumDate'}}<br/>
+  This will show a formatted date :- {{presentDate | date: 'M/dd/yy'}}<br/>
+  This indicates the hours and minutes :- {{presentDate | date: 'h:mm'}}<br/>
+  Seconds changing in Time: {{time$ | async | date:'mediumTime'}}
+</div>
+
+<div class ="a pipe">
+  <h1>Text Format Pipe</h1>
+  <p class ="pipes">Upper Case: {{'welcome to angular pipes!' | uppercase}}</p>
+  <p class ="pipes">Lower Case: {{'welcome to angular pipes!' | lowercase}}</p>
+  <p class ="pipes">Title Case: {{'welcome to angular pipes!' | titlecase}}</p>
+</div>
+
+
+<div class ="a pipe">
+<h1>Currency Pipe</h1>
+<p class ="pipes">{{price | currency: '':true}}</p>
+<p class ="pipes">{{price | currency:'INR' }}</p>
+</div>
+
+<div class ="a pipe">
+  <h1>Slice Pipe</h1>
+  <p>Start index:- {{Fruits | slice:2}}</p>
+  <p>Start and end index:-  {{Fruits | slice:1:4}} </p>
+  <p>Negative index:- {{Fruits | slice:- 2}}</p>
+  <p>Negative start and end index:- {{Fruits | slice:- 4:-2}}</p>
+</div>
+
+<div class ="a pipe">
+<h1>Decimal Pipe</h1>
+<p class ="pipes">{{decimalNum1 | number}}</p>
+<p class ="pipes">{{decimalNum2 | number}}</p>
+</div>
+
+<div class ="a pipe">
+  <h1>Percent Pipe</h1>
+  <p class="pipes">Percent: {{0.30 | percent}}</p>
+  <p class="pipes">Percent: {{0.50 | percent}}</p>
+  <p class="pipes">Percent: {{0.70 | percent}}</p>
+  <p class="pipes">Percent: {{1.00 | percent}}</p>
+</div>
+
+
+<div class ="a pipe">
+  <h1>JSON Pipe</h1>
+  <p class ="pipes">Object: {{ object | json }}</p>
+  <p class ="pipes">Array: {{ array | json }}</p>
+  <p class ="pipes">Numbers: {{ numbers| json }}</p>
+  <p class ="pipes">Sentence: {{ sentence| json }}</p>
+  <p class ="pipes">Text: {{ text| json }}</p>
+</div>
